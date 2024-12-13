@@ -1,0 +1,19 @@
+<script src="http://localhost:3000/index.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+  integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw="
+  crossorigin="anonymous"
+></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var splide = new Splide(".splide", {
+      type: "loop",
+      perPage: 4,
+    });
+    splide.mount();
+  });
+</script>
+
+const button = document.querySelector('#button');
+button.addEventListener('click', () => { const heading =
+document.querySelector('#heading'); heading.textContent = 'Hello, World!'; });
